@@ -13,4 +13,7 @@ class OneSiteDemo(models.Model):
     onesitedemo_text = models.TextField(verbose_name='Текст', blank=True, null=True)
     onesitedemo_date = models.DateTimeField(verbose_name='Время публикации')
 
+    def __unicode__(self):
+        return self.onesitedemo_title
+
 
