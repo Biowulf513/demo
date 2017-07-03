@@ -6,5 +6,5 @@ def one_site_demo(request):
     return render_to_response('onesitedemo_one.html', {'name':name})
 
 def one_site_all(request):
-    to = OneSiteDemo.objects.all()
-    return render_to_response('onesitedemo_all.html', {"to":to})
+    to_one_site_all = OneSiteDemo.objects.all()
+    return render_to_response('onesitedemo_all.html', {"to":to_one_site_all})
