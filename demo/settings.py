@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'onesite',
     'info',
+    'myforms',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -85,7 +86,8 @@ USE_TZ = True
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
     os.path.join(BASE_DIR,  'info/templates'),
-    os.path.join(BASE_DIR,  'onesite/templates'),)
+    os.path.join(BASE_DIR,  'onesite/templates'),
+    os.path.join(BASE_DIR,  'myforms/templates'),)
 
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
