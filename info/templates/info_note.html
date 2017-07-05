@@ -1,0 +1,16 @@
+{% extends 'info_base.html' %}
+
+
+{% block title %}
+Note INFO
+{% endblock %}
+
+{% block text %}
+    {% for note in note_array %}
+
+        {{ note.text }}<br>
+        Мысль пришла {{ note.time }}<br><hr><br>
+
+    {% endfor %}
+{% endblock %}
+

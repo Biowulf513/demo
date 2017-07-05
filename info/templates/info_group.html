@@ -1,0 +1,16 @@
+{% extends 'info_base.html' %}
+
+
+{% block title %}
+Group INFO
+{% endblock %}
+
+{% block text %}
+    {% for group in group_array %}
+
+        {{ group.name }}<br>
+        {{ group.content }}<br><hr><br>
+
+    {% endfor %}
+{% endblock %}
+

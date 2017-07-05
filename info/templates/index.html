@@ -5,9 +5,24 @@
 Index
 {% endblock %}
 
-{% block text %}
 
-{{ index_text }}
+    {% block text %}
 
-{% endblock %}
+    {{ index_text }}
+
+    <hr>
+        Info <br>
+
+        <a href="/info/music">music</a><br>
+        <a href="/info/group">group</a><br>
+        <a href="/info/friend">friend</a><br>
+        <a href="/info/note">note</a><br>
+
+    <hr>
+        Pages <br>
+
+        <a href="/onesite">one page</a><br>
+        <a href="/onesite/all">all page</a><br>
+
+    {% endblock %}
 

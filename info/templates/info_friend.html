@@ -1,0 +1,16 @@
+{% extends 'info_base.html' %}
+
+
+{% block title %}
+Friend INFO
+{% endblock %}
+
+{% block text %}
+    {% for friend in friend_array %}
+
+        {{ friend.name }}<br>
+        {{ friend.second_name }}<br><hr><br>
+
+    {% endfor %}
+{% endblock %}
+

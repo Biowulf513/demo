@@ -1,0 +1,17 @@
+{% extends 'info_base.html' %}
+
+
+{% block title %}
+Music INFO
+{% endblock %}
+
+{% block text %}
+    {% for music in music_array %}
+
+        {{ music.group_name }}<br>
+        {{ music.track_name }}<br>
+        {{ music.rating }}<br><hr><br>
+
+    {% endfor %}
+{% endblock %}
+
