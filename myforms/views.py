@@ -7,9 +7,9 @@ def my_name(request):
         form = MyNameForm(request.POST)
 
         if form.is_valid():
-            return HttpResponseRedirect('/forms/')
+            return render (request, 'tranks.html', {'form':form})
 
     else:
         form = MyNameForm()
 
-    return render(request, 'forms.html', {'form':form})
+    return render(request, './forms.html', {'form':form})
